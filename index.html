@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Terrain</title>
+</head>
+<body>
+    <!-- LANDING AND NAVIGATION -->
+    <div id="landing">
+        <nav>
+            <h1>Terrain</h1>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Maintenance</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+            <div class="menu-burger" >
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+            </div>
+        </nav>
+
+        <ul class="mobile-menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Maintenance</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+
+        <section class="landing-text container">
+            <h1>Terrain</h1>
+            <h2>Serving Denver since 1990</h2>       
+        </section>
+    </div>
+
+
+    <!-- ABOUT AND SERVICES SHORT -->
+    <section class="info-short section grid2 bg-dark">
+        <div class="about-short container">
+            <i class="far fa-address-card"></i>
+            <h2 class="section-head">About</h2>
+            <p class="lead">Founded in 1990, Terrain Inc. has developed into a full-service landscape company, servicing residential and commercial properties in Denver and the surrounding areas. Maintaining multi-residential properties, office complexes, urban streetscapes and high-end residential properties. </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        <div class="services-short container">
+            <i class="fas fa-tools"></i>
+            <h2 class="section-head">What we offer</h2>
+            <h3 class="service"><i class="fas fa-chevron-right"></i>Landscape Design</h3>
+            <h3 class="service"><i class="fas fa-chevron-right"></i>Hardscaping</h3>
+            <h3 class="service"><i class="fas fa-chevron-right"></i>Water Features</h3>
+            <h3 class="service"><i class="fas fa-chevron-right"></i>Xeriscaping</h3>
+            <h3 class="service"><i class="fas fa-chevron-right"></i>Maintenance</h3>
+            <hr>
+            <a href="#" class="btn btn-secondary">See All</a>
+        </div>
+    </section>
+
+
+    <!-- ESTIMATE FORM-->
+    <section class="estimate-home section container bg-light">
+        <div class="estimate-img img-wide">
+            <h2>Looking to redesign your yard?</h2>
+            <h3>Fill out the form below and get a free estimate!</h3>
+        </div>
+
+        <h2 class="section-head">Request an Estimate</h2>
+        <form action="#" class="grid2" novalidate>
+            <div class="estimate-info">
+                <h3 class="subsection-head">Contact Information</h3>
+                <hr>
+                <div class="form-item">
+                    <span><label for="name">Name : *</label> <p class="error"></p></span> <input type="text" name="name" placeholder="Enter Your Name" required pattern="^[A-Za-z]+$" maxlength="30"> 
+                </div>
+                <div class="form-item">
+                    <span><label for="email">E-mail : *</label> <p class="error"></p></span> <input type="email" name="email" placeholder="Enter Your E-mail" required>
+                </div>
+                <div class="form-item">
+                    <label for="street">Street :</label><input type="text" name="street" placeholder="Enter Your Street" maxlength="50">
+                </div>
+                <div class="form-item">
+                    <label for="city-state">City and State :</label><input type="text" name="city-state" placeholder="Enter Your City and State" maxlength="40">
+                </div>
+                <div class="form-item">
+                    <span><label for="phone">Phone : *</label> <p class="error"></p></span> <input type="text" name="phone" placeholder="Enter Your Phone" required pattern="^[0-9]+$" maxlength="24">
+                </div>
+            </div>
+            <div class="estimate-details">
+                <h3 class="subsection-head">Estimate Details</h3>
+                <hr>
+                <div class="form-item">
+                    <span><label for="date">Preffered Date: *</label> <p class="error"></p></span><input type="text" name="date" placeholder="Enter Your Preffered Date" required maxlength="25"> 
+                </div>
+                    <div class="form-item">
+                    <span><label for="time">Preffered Time : *</label> <p class="error"></p></span><input type="text" name="time" placeholder="Enter Your Preffered Time" required maxlength="16">
+                </div>
+                    <div class="form-item textarea">
+                    <span><label for="landscape">Current Landscape Description : *</label> <p class="error"></p></span><textarea name="landscape" cols="50" rows="3" placeholder="Describe Your Current Landscape" required maxlength="3000"></textarea>
+                </div>
+                <div class="form-item textarea">
+                    <span><label for="services">Services You Need : *</label> <p class="error"></p></span><textarea name="services" cols="50" rows="3" placeholder="Describe The Services You Need" required maxlength="3000"></textarea>
+                </div>
+                <div class="form-submit">
+                    <span><label for="confirm">Confirm</label> <input type="checkbox" name="confirm" required></span> 
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- FOOTER-->
+    <footer class="container grid3 bg-dark">
+        <ul class="footer-general">
+            <li>
+                <h3>General</h3>
+            </li>
+            <hr>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Maintenance</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+        <ul class="footer-why-us">
+            <li>
+                <h3>Why Us</h3>
+            </li>
+            <hr>
+            <li>
+                <a href="#">Expertise</a>
+            </li>
+            <li>
+                <a href="#">Testemonials</a>
+            </li>
+            <li>
+                <a href="#">Ratings</a>
+            </li>
+            
+        </ul>
+        <ul class="footer-contact">
+            <li>
+                <h3>Contact</h3>
+            </li>
+            <hr>
+            <li>
+                <p>575 Lipan Street</p>
+            </li>
+            <li>
+                <p>Denver, CO 80204</p>
+            </li>
+            <li>
+                <p>(303) 777-1033</p>
+            </li>
+            <li>
+                <p>james@terraininc.com</p>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
