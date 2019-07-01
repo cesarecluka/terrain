@@ -1,0 +1,16 @@
+{
+  "name": "terrain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://cesarecluka.github.io/terrain",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
